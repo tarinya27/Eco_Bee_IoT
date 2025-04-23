@@ -1,0 +1,10 @@
+# PlatformIO
+.pio
+
+# Secret files
+src/secrets.h
+
+# IDE
+.vscode
+.idea
+*.iml
