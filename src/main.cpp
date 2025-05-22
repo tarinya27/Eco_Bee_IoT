@@ -156,6 +156,7 @@ void loop() {
             log_seperator();
             return;
         }
+        fb.pushJson(FIREBASE_HISTORY_PATH, pumpData);
         double current_quantity = get_fluid_level(event.temperature) * FLUID_CROSS_SECTION;
         while (current_quantity < quantity) {
             Serial.printf("Current quantity: %.2f\n", current_quantity);
